@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-music Web-player</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/logo1.png"  >
+    
+  </head>
+
+<body>
+    <div class="container flex bg-black">
+    <!-- Left-portion -->
+        <div class="left bg-grey">  
+            <div class="home rounded  m-1 p-1">
+                <div class="logo"><img src="LOGO.png" alt="logo"></div>
+                <ul><li class="flex"><img src="home.svg" alt="home">Home</li>
+            <li class="flex"><img src="search.svg" alt="search"><input type="search" placeholder="serach for a song"></li>
+            </ul></div>
+            <div class="library rounded  m-1 p-1">
+                <div class="heading"> 
+                    <img  src="library.svg">
+                    <h2 style="color: black;">Your library</h2>
+                </div>
+                <div class="songlist">
+                  <ul>
+                     
+                  </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                          <span>Legal</span>
+                        </a>
+                      </div>
+
+                      <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                          <span>Safety &amp; Privacy Center</span>
+                        </a>
+                      </div>
+
+                      <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                          <span>Privacy Policy</span>
+                        </a>
+                      </div>
+
+                      <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                          <span>Cookies</span>
+                        </a>
+                      </div>
+                    
+                      <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                          <span>About Ads</span>
+                        </a>
+                      </div>
+
+                      <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                          <span>Accessibility</span>
+                        </a>
+                      </div>
+                   
+                </div>
+                </div>
+                
+            </div>
+    <!-- Rightportion -->
+    <div class="right m-1 ">
+        <div class="header">
+          <div class="nav"><i class="fa-solid fa-angle-left" class="invert"></i><i class="fa-solid fa-angle-right"></i></div>
+          <div class="moving"><marquee behavior="alternate"><img height="30px" src="logo1.png">music</marquee></div> 
+          <div class="buttons">
+            <button>Log-in</button>
+            <button>sign-in</button>
+          </div>
+        </div>
+        <div class="spotify-playlist">
+          <h1><b>T</b>music Playlist</h1>
+          <div class="card-container">
+            <div data-folder="Glory" class="card">
+              <div  class="play"><i class="fa-solid fa-play"></i></div>  
+              <img src="honeysing.jpg" alt="Honey singh">
+              <h2>Glory</h2>
+              <p>Yo Yo Honey Singh</p>
+            </div>
+            <div data-folder="Making_Memories" class="card">
+              <div class="play"><i class="fa-solid fa-play"></i></div>  
+              <img src="kAujla.jpg" alt="Karan Aujla">
+              <h2>Making Memories</h2>
+              <p>Karan Aujla</p>
+            </div>
+            <div data-folder="Punya_paap" class="card">
+              <div class="play"><i class="fa-solid fa-play"></i></div>  
+              <img src="divine.jpg" alt="Divine">
+              <h2>Puny Paap</h2>
+              <p>Divine</p>
+            </div>
+            <div data-folder="Isha" class="card">
+              <div class="play"><i class="fa-solid fa-play"></i></div>  
+              <img src="kalam.jpg" alt="Kalam Ink">
+              <h2>Isha</h2>
+              <p>Kalam Ink</p>
+            </div>
+            <div data-folder="Kaha_Tak" class="card">
+              <div class="play"><i class="fa-solid fa-play"></i></div>  
+              <img src="krsna.jpg" alt="Kr$na">
+              <h2>Kaha Tak</h2>
+              <p>Kr$na</p>
+            </div>
+            <div data-folder="The_Heal" class="card">
+              <div class="play"><i class="fa-solid fa-play"></i></div>  
+              <img src="mcinsane.jpg" alt="Mc Insane">
+              <h2>The Heal</h2>
+              <p>Mc Insane</p>
+            </div>
+           
+
+            
+
+
+           
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle">
+                
+              </div>
+            </div>
+          
+            <div class="songinfo"></div>
+            <div class="songbuttons">
+              <img src="prev.svg" class="invert" id="prevs">
+              <img src="pause.svg" class="invert" id="play">
+              <img src="next.svg" class="invert" id="nexts">
+               </div>
+                <div class="songtime"></div>
+                <div class="vol"><img class="imgsize" src="volume.svg"></div>
+                <div class="ranges"><input type="range" name="range"></div>
+                
+          </div>
+          
+          </div>
+
+          <div class="spotify-playlist">
+            <h1 style="margin-top: 10px;"><b>T</b>music hits</h1>
+            <div class="card-container">
+              <div data-folder="B_Praak" class="card">
+                <div class="play"><i class="fa-solid fa-play"></i></div>  
+                <img src="Bpraak.jpg" alt="B Praak">
+                <h2>B Prrak-hits</h2>
+                <p>B Praak</p >
+              </div>
+              <div data-folder="Arijit_Singh" class="card">
+                <div class="play"><i class="fa-solid fa-play"></i></div>  
+                <img src="arijit.jpg" alt="Arijit Singh" >
+                <h2>Arijit's Hits</h2>
+                <p>Arijit Singh</p>
+              </div>
+              <div class="card" data-folder="Anuv_Jain">
+                <div class="play"><i class="fa-solid fa-play"></i></div>  
+                <img src="anuvjain.jpg" alt="Anuv Jain">
+                <h2>Anuv Jain hits</h2>
+                <p>Anuv Jain</p>
+              </div>
+              <div data-folder="AR_rehman" class="card">
+                <div class="play"><i class="fa-solid fa-play"></i></div>  
+                <img src="AR_Rahman_002_20210120084455_500x500 (1).jpg" height="180px" alt="AR Rahman">
+                <h2>AR Rahman hits</h2>
+                <p>AR Rahman</p>
+              </div>
+              <div data-folder="Sachet_p" class="card">
+                <div class="play"><i class="fa-solid fa-play"></i></div>  
+                <img src="schet_p.jpg" height="175px" alt="Sachet-Parampara">
+                <h2>Sachet-Parampara hits</h2>
+                <p>Sachet-Parampara</p>
+              </div>
+              
+              <div class="card" data-folder="Atif_aslam">
+                <div class="play"><i class="fa-solid fa-play"></i></div>  
+                <img src="atif.jpg" alt="Atif Aslam" height="180PX">
+                <h2>Atif Aslam hits</h2>
+                <p>Atif Aslam</p> 
+              </div>
+        </div>
+        
+</div>
+<script src="index.js"></script>
+    </body>
+</html>

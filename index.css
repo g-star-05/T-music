@@ -1,0 +1,322 @@
+:root{
+  --a:0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+body {
+  background-color: #d4f1f4;
+  color: white;
+}
+.left {
+  width: 25vw;
+  padding: 10px;
+  height: 100%;
+}
+
+.left input{
+text-align: center;
+}
+
+.right {
+  width: 75vw;
+  height: 100%;
+  position: relative;
+  background-color: #d4f1f4;
+  }
+.home ul li {
+  display: flex;
+  list-style: none;
+  width: 14px;
+  gap: 15px;
+  padding-top: 14px;
+  color: black;
+}
+.home{
+  background-color: #d4f1f4 ;
+}
+.home input{
+  border-top-left-radius: 25px;
+  height: 23px;
+  width: 200px;
+  border-bottom-right-radius: 25px;
+}
+.heading {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  gap: 15px;
+  padding-top: 14px;
+  padding: 23px 14px;
+  font-weight: bold;
+  align-items: center;
+  font-size: 12px;
+}
+.library {
+  min-height: 70vh;
+  position: relative;
+  background-color: #d4f1f4;
+}
+
+.heading img {
+  width: 30px;
+}
+.footer {
+  display: flex;
+  font-size: 10px;
+  color: grey;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-evenly;
+}
+.footer a {
+  color: grey;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #05445e;
+  height: 50px;
+  align-items: center;
+}
+
+.header i {
+  padding-right: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.header button {
+  background-color: aliceblue;
+  height: 40px;
+  width: 80px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.spotify-playlist {
+  padding: 16px;
+  font-size: 10px;
+  text-decoration: underline;
+  background-color: #d4f1f4; 
+  color: black;  
+}
+
+.card-container{
+display: flex;
+background-color:#d4f1f4;
+gap: 15px;
+}
+
+.spotify-playlist .card {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.card {
+  position: relative;
+  background-color: #05445e;
+  
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+.card h2,p{
+  color: white;
+}
+.card > * {
+  padding-top: 10px;
+}
+
+.play{ 
+width: 28px; 
+height: 28px; 
+background-color: #1fdf64; 
+border-radius: 50%; 
+padding: 4px; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+position: absolute; 
+top: 120px; 
+right: 17px; 
+opacity: var(--a); 
+transition: all 0.5s ease-out;
+}
+.card:hover {
+  background-color: #252525;
+  cursor: pointer;
+  --a:1;
+}
+
+.playbar {
+  position: fixed;
+  bottom: 15px;
+  background-color:#05445e;
+  width: 70vw;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px ;
+  height: 35px;
+  color: white;
+  z-index: 1;
+}
+.songbuttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:5px;
+}
+.songbuttons img {
+  padding: 6px;
+  
+}
+#nexts{
+  padding: 6px;
+  position: relative;
+  left: 8px;
+}
+
+.songlist ul {
+  padding: 0 12px;
+  color: black;
+}
+
+.songlist ul li {
+  list-style: decimal;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  padding: 12px 0;
+  border: 1px solid #05445e;
+  border-radius: 5px;
+  padding: 13px;
+  margin: 12px 0;
+  justify-content: space-between;
+}
+
+.playnow {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.playnow span {
+  font-size: 13px;
+  width: 64px;
+}
+
+.songlist .info{
+    font-size: 13px;
+}
+
+.songlist ul{
+    height:544px;
+    overflow:auto;
+    margin-bottom: 44px;
+}
+
+.seekbar{
+    height: 2px;
+    width: 98%;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 3px;
+    border-radius: 30px;
+    margin: 3px;
+    padding: 1px;
+    transition: left 0.5S;
+    cursor: pointer;
+}
+
+.circle{
+    height: 13px;
+    width: 13px;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+}
+
+.songbuttons img{
+  cursor: pointer;
+}
+
+.songinfo{
+position: absolute;  
+left: 10px;
+font-size: 13px;
+top: 16px;
+}
+
+.songtime{
+  position: absolute;  
+  right: 10px;
+  font-size: 13px;
+  top: 16px;
+  }
+
+  .vol img{
+    position: absolute;
+    right: 23%;
+    top: 10px; 
+    filter: invert(1);
+    cursor: pointer;
+  }
+  
+ 
+
+.ranges input{
+    position: absolute;
+    right: 9.5%;
+    top: 15px;
+    cursor: pointer;
+    accent-color: orange;
+  }
+
+  .logo img{
+    height: 30px;
+  
+  }
+
+  .Tmusich{
+    height: 20px;
+    width: 100vw;
+    background-color: #d4f1f4;
+    font-size: 23px;
+    color: black;
+    position: relative;
+    left: 20px;
+    text-decoration: underline;
+  }
+
+ .alert{
+  background-color: #00ff00;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  
+ }
+
+ .moving{
+  width: 70%;
+  font-size: 20px;
+  
+  }
+
+
+  /* ______________________________________________________________________________________________ */
+  /* Responsive-code */
+
+  
